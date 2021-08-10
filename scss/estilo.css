@@ -3,8 +3,8 @@
   margin: 0%;
   padding: 0%;
 }
-/*----------------*/
 
+/*----------------*/
 /*table {
   border: 3px solid;
 }
@@ -19,34 +19,37 @@ td {
 }
 */
 /*Breve Descripcion de lo que vamos a encontarr en Puebloalto*/
-
-.columnas{
- width: 100%;
- height: 500px;
- background-color: #F0BAF4;
+.columnas {
+  width: 100%;
+  height: 500px;
+  background-color: #F0BAF4;
 }
+
 .encabezado {
   text-align: center;
-  background: rgb(240, 227, 255);
+  background: #f0e3ff;
 }
-
-
-
 
 p {
   padding: 10px;
   color: #916dd5;
   text-align: center;
 }
-/*----------------------------------*/
 
+/*----------------------------------*/
 /*-----Footer*------*/
 footer {
   background: #FCF1FD;
   padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .bi {
@@ -54,10 +57,12 @@ footer {
   margin-right: 30px;
   color: #916dd5;
 }
+
 /* Pagina Sobre Nosotros */
 .sobreNosotros-container {
   padding: 0px 20px;
 }
+
 p.sobreNosotros {
   font-style: italic;
   font-size: 20px;
@@ -71,38 +76,56 @@ p.sobreNosotros {
   width: 50px;
   height: 50px;
 }
+
 .nav-menu {
   background-color: #FCF1FD;
 }
+
 .navbar-collapse {
-  flex-grow: unset;
+  -webkit-box-flex: unset;
+      -ms-flex-positive: unset;
+          flex-grow: unset;
   width: 100%;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
+
 .navbar .navbar-nav .nav-link {
   color: #3e206d;
   margin: 0px 30px;
   font-size: 1.3rem;
   font-weight: 600;
 }
+
 .navbar .navbar-nav .nav-link:hover {
   color: #b0aeb4;
 }
+
 .btn {
   background-color: #d9d3e2;
 }
-/*----------------------------*/
 
+/*----------------------------*/
 .nosotros {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center; /*clase8*/
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  /*clase8*/
 }
 
 .imgNosotros {
   width: 50%;
-  transition: all 2s; /*clase8*/
+  -webkit-transition: all 2s;
+  transition: all 2s;
+  /*clase8*/
 }
 
 .imgNosotros:hover {
@@ -112,35 +135,44 @@ p.sobreNosotros {
 }
 
 .index {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-
 /*Desafio 8 */
-
 .seccion1 {
   margin-top: 25px;
 }
 
 .seccion2:hover {
-  transform: rotateY(70deg);
+  -webkit-transform: rotateY(70deg);
+          transform: rotateY(70deg);
 }
 
 .cardProducto:hover {
-  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 /*Seccion de Galeria*/
 .galeria {
   padding: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 /*Seccion de Contacto*/
-
 fieldset {
   padding: 30px;
   background-color: #d89cf6;
@@ -154,6 +186,8 @@ fieldset {
 /*clase 11*/
 /*Implementando BEM*/
 .productos__cardProducto-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   text-align: center;
 }
@@ -169,11 +203,18 @@ fieldset {
   font-size: 1rem;
   color: chocolate;
 }
-h3 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 
+h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #916dd5;
   font-size: 40px;
   text-align: center;
@@ -193,50 +234,47 @@ h3 {
   width: 100%;
   margin-bottom: 30px;
 }
+
 .carousel__slide-section {
   height: 80vh;
 }
+
 .carousel__slide-1 {
   background: url("../img/carousel1.png") no-repeat center;
   background-size: cover;
 }
+
 .carousel__slide-2 {
   background: url("../img/carousel2.png") no-repeat center;
   background-size: cover;
 }
+
 .carousel__slide-3 {
   background: url("../img/carousel3.png") no-repeat center;
   background-size: cover;
 }
 
 /*CLASE 12 --Extend*/
-
-.h1Padre {
+.h1Padre, .h1Hijo1 {
   color: #3e206d;
   font-size: 30px;
   text-align: center;
   margin-top: 200px;
-
 }
 
 .h1Hijo1 {
-  @extend .h1Padre;
-  color: #916dd5;
-  
-}
-
-.h1Hijo1 {
-  @extend .h1Padre;
   color: #916dd5;
 }
 
 .h1Hijo1 {
-  @extend .h1Padre;
   color: #916dd5;
 }
 
 .h1Hijo1 {
-  @extend .h1Padre;
+  color: #916dd5;
+}
+
+.h1Hijo1 {
   color: #916dd5;
 }
 
@@ -247,41 +285,41 @@ h2 {
 }
 
 /*CLASE 12 --Mixins*/
-@mixin estiloP($colorfondo, $letra) {
-  background: $colorfondo;
-  font-size: $letra;
- 
-  
-}
 .nosotros__container-parrafo {
-  @include estiloP(orange, 25px);
+  background: orange;
+  font-size: 25px;
 }
+
 .columnasHome__section-parrafo1 {
-  @include estiloP(#141414, 25px);
+  background: #141414;
+  font-size: 25px;
   margin: 0%;
   padding: 0%;
 }
+
 .columnasHome__section-parrafo2 {
-  @include estiloP(#baf4c7, 25px);
+  background: #baf4c7;
+  font-size: 25px;
 }
 
 /*Modificaciones de la Web, se agregauna foto de fondo en el nicio de la WEB*/
 /*PORTADA*/
-.primeraSeccion{
- width: 100%;
- height: 500px;
- position: relative;
- padding: 5px;
- background-image: url(../img/Portada.jpg);
- background-position: center;
- background-size: cover;
- background-repeat: no-repeat;
+.primeraSeccion {
+  width: 100%;
+  height: 500px;
+  position: relative;
+  padding: 5px;
+  background-image: url(../img/Portada.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-.primeraSeccion:before{
+
+.primeraSeccion:before {
   content: ' ';
   width: 100%;
   height: 100%;
-  background:#eee5edcc;
+  background: #eee5edcc;
   position: absolute;
   top: 0;
   left: 0;
@@ -291,7 +329,14 @@ h2 {
 .videoHome {
   width: 100%;
   height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+/*# sourceMappingURL=estilo.css.map */

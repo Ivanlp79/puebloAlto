@@ -14,5 +14,13 @@
     "nodemon": "^2.0.9"
   },
   "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ivanlp79/puebloAlto.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Ivanlp79/puebloAlto/issues"
+  },
+  "homepage": "https://github.com/Ivanlp79/puebloAlto#readme",
   "description": ""
 }

@@ -13,7 +13,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="scss/estilo.css">
 
     
 
@@ -25,7 +25,7 @@
 <body>
 
     <header>
-        <nav class="navbar navbar-expand-sm nav-menu ">
+        <nav class="navbar navbar-expand-sm nav-menu navbar-light ">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html"><img class="logo" src="./img/Logo.png"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -57,52 +57,25 @@
         </nav>
     </header>
 
+    
+
     <main class="index">
 
-        <h1 class="h1Padre" data-aos="fade-up">Bienvenidos a Puebloalto</h1>
-        <h2 class="animate__animated animate__swing">Un regalo Diferente</h2>
-
-        <!--Inicio Carousel-->
-        <div class="carousel">
-            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                        class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="carousel__slide-section carousel__slide-1"></div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="carousel__slide-section carousel__slide-2"></div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="carousel__slide-section carousel__slide-3"></div>
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+        <!--Portada-->
+        <div class="primeraSeccion">
+            <div class="titulosPortada">
+                <h1 class="h1Padre" data-aos="fade-up">Bienvenidos a Puebloalto</h1> 
+                <h2 class="animate__animated animate__swing">Un regalo Diferente</h2>
             </div>
         </div>
-        <!--Fin Carousel-->
+        <!--Fin Portada-->
 
-
-        <div class="row tex-video__section">
+        <!--Seccion 1-->  
+        <div class="row columnas">
+            
             <div class="col-sm-12 col-md-6">
                 <div class="encabezado">
-                    <p class="video__section-parrafo">Regalos Personalizados
+                    <p class="columnasHome__section-parrafo1">Regalos Personalizados
                         Porcelana pintada a mano
                         Vitrofusión
                         Estampado de vajilla
@@ -120,17 +93,41 @@
                     </p>
                 </div>
             </div>
+            
             <div class="col-sm-12 col-md-6">
-                <div class="seccion1">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/HP3XK43lEtU"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
+                <div class="encabezado">
+                    <p class="columnasHome__section-parrafo2">Regalos Personalizados
+                        Porcelana pintada a mano
+                        Vitrofusión
+                        Estampado de vajilla
+                        Estampado de Vidrio
+                        Souvenirs
+                        Próximamente Atelier
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta repellat velit, dolores, impedit
+                        porro
+                        est asperiores ea cum accusamus voluptas quo fugit aspernatur, veritatis nobis aut corporis
+                        ipsam sequi
+                        nam.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum reprehenderit laborum tempore porro
+                        quae impedit officia quisquam assumenda aliquam consequuntur dolorum accusantium autem, unde
+                        vitae, odit debitis neque, nesciunt ab.
+                    </p>
                 </div>
             </div>
+           
         </div>
-        <hr>
+               
+        <!--Seccion Video-->
 
+        <div class="videoHome">
+            <iframe width="100%" height="500" src="https://www.youtube.com/embed/HP3XK43lEtU"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+        </div>
+
+        
         <section class="seccion3">
 
             <h3>Mira Nuestros Ultimos Regalos</h3>
