@@ -2,6 +2,7 @@
 * {
   margin: 0%;
   padding: 0%;
+
 }
 /*----------------*/
 
@@ -35,7 +36,7 @@ td {
 
 p {
   padding: 10px;
-  color: #916dd5;
+  color: #FCF1FD;
   text-align: center;
 }
 /*----------------------------------*/
@@ -101,8 +102,7 @@ p.sobreNosotros {
 }
 
 .imgNosotros {
-  width: 50%;
-  transition: all 2s; /*clase8*/
+   transform: scale(50%);
 }
 
 .imgNosotros:hover {
@@ -160,32 +160,33 @@ fieldset {
 
 .productos__titulo {
   font-size: 1.5rem;
-  color: #6dd5ad;
+  color: #916dd5;
   margin-bottom: 20px;
 }
 
 .productos__texto {
   line-height: 28px;
   font-size: 1rem;
-  color: chocolate;
+  color: #916dd5;
 }
 h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
-
   color: #916dd5;
   font-size: 40px;
   text-align: center;
-  padding: 16px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   width: 100%;
 }
 
 /*Desafio 9 */
 .container {
-  background-color: #916dd5;
+  background-color: #FCF1FD;
   padding: 25px;
   margin-bottom: 50px;
+  padding-top: 50px;
 }
 
 /*Uso de BEM*/
@@ -212,7 +213,7 @@ h3 {
 /*CLASE 12 --Extend*/
 
 .h1Padre {
-  color: #3e206d;
+  color: #FCF1FD ;
   font-size: 50px;
   text-align: center;
   margin-top: 200px;
@@ -224,7 +225,7 @@ h3 {
 
 
 h2 {
-  color: #3e206d;
+  color: #FCF1FD;
   font-size: 35px;
   text-align: center;
 }
@@ -260,15 +261,7 @@ h2 {
  background-size: cover;
  background-repeat: no-repeat;
 }
-.primeraSeccion:before{
-  content: ' ';
-  width: 100%;
-  height: 100%;
-  background:#eee5edcc;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
+
 
 /*seccion dos Columnas*/
 .videoHome {
@@ -286,6 +279,7 @@ h2 {
 
 }
 h2.h2Izquierda{
+  color: #916dd5;
   font-size: 50px;
   width: 50%;
   text-align: left;
@@ -296,6 +290,7 @@ h2.h2Izquierda{
 
 }
 p.pIzquierda{
+  color: #916dd5;
   font-size: 25px;
   line-height: 30px;
   text-align: left;
@@ -311,9 +306,31 @@ p.pIzquierda{
   width: 50%;
   height: 80vh;
 }
+/*---Pagina Nosotras---*/
+p.pIzquierdaNosotras{
+  color: #916dd5;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: left;
+  width: 50%;
+  margin: auto;
+}
+
+.derechaNosotras{
+  background: url(../img/gabyyale.jpeg);
+  background-size: cover;
+  background-position: center;
+  width: 50%;
+  height: 80vh;
+}
+
 
 #pantalla-dividida{
   display: flex;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color:#FCF1FD;
+
 }
 
 .seccion3{
@@ -324,25 +341,47 @@ p.pIzquierda{
 
 .productos{
   background-color:#FCF1FD;
+  padding-top: 50px;
+
 }
+
+
+/*---Portada Productos---*/
 
 .primeraSeccionProductos{
   width: 100%;
   height: 500px;
   position: relative;
   padding: 5px;
-  background-image: url(../img/Portada.jpg);
+  background-image: url(../img/productos.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
  }
 
- .primeraSeccionProductos:before{
-  content: ' ';
+ /*---Portada Contacto---*/
+
+.primeraSeccionContacto{
   width: 100%;
-  height: 100%;
-  background:#eee5edcc;
-  position: absolute;
-  top: 0;
-  left: 0;
+  height: 500px;
+  position: relative;
+  padding: 5px;
+  background-image: url(../img/sobreNosotras.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+ }
+
+.galeriasProductos{
+  background-color:#FCF1FD;
+  padding-bottom: 40px;
+}
+
+.contacto{
+  background-color:#FCF1FD;
+  padding-bottom: 40px;
+}
+
+.form-check{
+  color:#916dd5;
 }
